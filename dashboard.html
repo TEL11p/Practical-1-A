@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.1.3/ionicons.min.js" integrity="sha512-8O7VIjJxO2P/Vfm34bYnEbPwocNkwUQdzJCYooCDWP9MT4GpPw5Ktmk9NxVyWfrzDlXnbCsZzSUR81Etc6gv0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <link rel="stylesheet" href="dash.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Dashboard</title>
+</head>
+<body>
+
+
+<!-- The sidebar -->
+<div class="sidebar">
+  <img class="logo" src="logo2.jpeg" alt="">
+
+  <a class="active" href="#home"><span><ion-icon name="home"></ion-icon></span>Home</a>
+    <a href="#bookmark"><span><ion-icon name="bookmarks"></ion-icon></span>Bookmark</a>
+    <a href="#mycourse"><span><ion-icon name="create"></ion-icon></span>MyCourse</a>
+    <a href="#settings"><span><ion-icon name="settings"></ion-icon></span>Settings</a>
+  </div>
+  
+  <!-- Page content -->
+  <div class="content">
+
+    <div class="nav">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-body-secondary" style="width: 150%;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+
+            <form class="d-flex ms-lg-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+  
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><span><ion-icon name="notifications"></ion-icon></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#"><span><ion-icon name="person-add"></ion-icon></span></a>
+                </li>                           
+              </ul>
+                        
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    
+    <div class="heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h1>Graphic Design Skills</h1>
+            <h4>The Best Course For You</h4>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary" id="explore" type="submit">Explore More</button>
+          </div>
+        </div>
+      
+
+        <div class="cards">
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 bg-info">                
+                <div class="card-body">               
+                  <img src="baseline_looks_one_white_24dp.png" alt="">   
+                  <h5 class="card-title">Level 1</h5>
+                  <p class="card-text">15 Videos</p>
+                </div>
+                <div class="card-footer bg-info-subtle">
+                  <small class="text-muted">Start Now</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100  bg-warning">                
+                <div class="card-body">
+                  <img src="baseline_looks_two_white_24dp.png" alt="">
+                  <h5 class="card-title">Level 2</h5>
+                  <p class="card-text">23 Videos</p>
+                </div>
+                <div class="card-footer bg-warning-subtle">
+                  <small class="text-muted">Start Now</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 bg-success">
+                <div class="card-body">
+                  <img src="baseline_looks_3_white_24dp.png" alt="">
+                  <h5 class="card-title">Level 3</h5>
+                  <p class="card-text">18 Videos</p>
+                </div>
+                <div class="card-footer bg-success-subtle">
+                  <small class="text-muted">Start Now</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="chart">
+          <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col">              
+              <div class="card">
+                <img class="card-img" src="chart.png" alt="Card image">                
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  
+  <!-- Footer -->
+<footer class="page-footer font-small blue badge" style="background-color: skyblue; color: black; width: 100%; font-size: large;">
+
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2021 Copyright : This Page is only for College Assignments 	  
+	</div>
+	<!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
+

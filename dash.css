@@ -1,0 +1,121 @@
+/* The side navigation menu */
+.sidebar {
+    margin: -8px;
+    padding: 20px;
+    width: 220px;
+    background-color: white;
+    position: fixed;
+    height: 50%;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 15px;    
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-height: 700px) {
+    .sidebar {        
+      width: 100px;    
+      height: auto;
+      position: fixed;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      width: 100px;
+      text-align: center;
+      float: none;      
+    }
+  }
+
+.sidebar span{
+  font-size: 25px;  
+  padding-right: 10px;  
+}
+
+.logo{
+  
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  width: 200px;
+  height: 180px;
+}
+
+.nav{
+  margin-bottom: -100px;
+  width: 100%;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.nav-item span{
+  font-size: x-large;  
+}
+
+.heading{
+  margin-left: 20px;                            
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#explore{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+.cards{
+  margin-top: 40px;
+}
+
+.card-body{  
+  margin-bottom: 20px;
+}
+
+.card-title{  
+  margin-top: 20px;
+}
+
+.card-img{
+  width: 500px;
+  
+}
+
+.page-footer{
+  width: 100%;
+  height: 60px;
+}
+
+@media only screen and (max-width: 480px) {
+  .card-img {
+    width: 100%;
+  }
+}
